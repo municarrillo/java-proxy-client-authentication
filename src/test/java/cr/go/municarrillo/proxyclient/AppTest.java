@@ -1,4 +1,4 @@
-package com.proxy.client;
+package cr.go.municarrillo.proxyclient;
 
 import static org.junit.Assert.assertTrue;
 

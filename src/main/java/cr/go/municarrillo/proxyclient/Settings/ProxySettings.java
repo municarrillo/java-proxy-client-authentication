@@ -1,4 +1,4 @@
-package com.proxy.client.Settings;
+package cr.go.municarrillo.proxyclient.Settings;
 
 import java.net.InetSocketAddress;
 import java.net.ProxySelector;

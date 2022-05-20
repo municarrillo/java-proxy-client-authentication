@@ -1,9 +1,9 @@
-package com.proxy.client;
+package cr.go.municarrillo.proxyclient;
 
 import java.util.Scanner;
 
-import com.proxy.client.Config.ClientAuthentication;
-import com.proxy.client.Settings.ProxySettings;
+import cr.go.municarrillo.proxyclient.Config.ClientAuthentication;
+import cr.go.municarrillo.proxyclient.Settings.ProxySettings;
 
 
 public class App {
