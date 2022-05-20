@@ -21,6 +21,7 @@ public class ProxySettings {
         try {
             this.proxy = (Proxy) ProxySelector.getDefault().select(new URI("http://firmador.libre.cr/")).iterator().next();
 
+            // TODO: The following instructions might be unnecessary...
             if (proxy != null && proxy.address() != null) {
 
                 InetSocketAddress addr = (InetSocketAddress) proxy.address();
@@ -43,10 +44,10 @@ public class ProxySettings {
 
     @Override
     public String toString() {
-        if (this.proxy.address() != null) return "No proxy settings detected.";
+        if (this.proxy == null || this.proxy.address() == null) return "No proxy settings detected.";
         else {
             InetSocketAddress addr = (InetSocketAddress) proxy.address();
-            return String.join("-", addr.getHostName(), Integer.toString(addr.getPort()));
+            return String.join("--", addr.getHostName(), Integer.toString(addr.getPort()));
         }
     }
 

@@ -13,6 +13,7 @@ public class App {
         ProxySettings proxy = new ProxySettings();
 
         proxy.autoDetectSettings();
+        System.out.println(proxy.toString());
         
         if (proxy.isProxyDetected()) {
             Scanner scanner = new Scanner(System.in);
@@ -28,8 +29,6 @@ public class App {
 
             client.authenticate();
             client.isAuthenticated();
-
-        } else System.out.println("No se ha detectado una configuración proxy.");
-
+        }
     }
 }
