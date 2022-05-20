@@ -1,4 +1,4 @@
-package cr.go.municarrillo.proxyclient.Config;
+package cr.go.municarrillo.proxyclient.Client;
 
 import java.io.IOException;
 import java.net.Authenticator;

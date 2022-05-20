@@ -2,7 +2,7 @@ package cr.go.municarrillo.proxyclient;
 
 import java.util.Scanner;
 
-import cr.go.municarrillo.proxyclient.Config.ClientAuthentication;
+import cr.go.municarrillo.proxyclient.Client.ClientAuthentication;
 import cr.go.municarrillo.proxyclient.Settings.ProxySettings;
 
 
